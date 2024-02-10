@@ -4,9 +4,3 @@
 
 
 
-.cus-nav-btn, .cus-circle:hover{
-    @apply background-color: bg-purple;
-}
-.cus-circle:hover{
-    @apply background-color: bg-blue;
-}
