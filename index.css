@@ -3,4 +3,6 @@
 @tailwind utilities;
 
 
-
+.main-title{
+    @apply text-9xl font-bold mb-4;
+}
