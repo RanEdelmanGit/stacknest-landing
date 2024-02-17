@@ -3,12 +3,44 @@
 @tailwind utilities;
 
 
-@layer base {
-    h1 {
-      @apply mt-4 mb-2 text-2xl font-bold;
-    }
-    h2 {
-      @apply mt-3 mb-1 text-xl font-semibold;
-    }
-  }
-  
+.title-primary{
+  @apply mt-4 mb-2 lg:text-7xl font-bold;
+}
+
+.title-secondary{
+  @apply mt-4 lg:text-5xl font-bold mb-8;
+}
+
+.sub-title{
+  @apply font-bold text-teal text-xl;
+}
+
+.paragraph-primary{
+  @apply lg:text-2xl my-6;
+}
+
+.paragraph-secondary{
+  @apply lg:text-xl my-6;
+}
+
+.purple-button{
+  @apply bg-purple text-white h-14 w-48 font-bold py-2 px-6 rounded-full hover:bg-blue transition duration-300;
+}
+
+.black-button{
+  @apply bg-transparent h-14 w-48 border-2 hover:border-purple font-bold py-2 px-6 rounded-full hover:bg-purple hover:text-white transition duration-300;
+}
+
+.hero-image{
+  @apply max-w-xs md:max-w-sm lg:max-w-lg xl:max-w-xl;
+}
+
+.services-container{
+  @apply container mx-auto mb-36 flex flex-row items-center justify-center lg:gap-96;
+}
+
+.nav-link {
+  @apply mr-5 px-5 hover:text-gray-300;
+}
+
+

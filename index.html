@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +9,16 @@
 </head>
 <body class="bg-black">
 
-    <header class="sticky top-0 body-font shadow-sm">
+    <header class="top-0 body-font shadow-sm">
         <nav class="mx-10 flex p-5 flex-col md:flex-row items-center justify-between">
             <a href="/" class="flex items-center text-white mb-4 md:mb-0">
                 <img src="./assets/stacknest_logo.svg" alt="Stack Nest" class="w-62">
             </a>
             <div class="flex flex-wrap text-white items-center text-lg justify-center">
-                <a href="#about" class="mr-5 px-5 hover:text-gray-300">About</a>
-                <a href="#portfolio" class="mr-5 px-5 hover:text-gray-300">Portfolio</a>
-                <a href="#contact" class="mr-5 px-5 hover:text-gray-300">Contact</a>
-                <a href="#quote" class="items-center inline-block ml-15 py-2.5 px-6 text-white bg-blue hover:bg-purple rounded-full shadow-lg">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#quote" class="inline-block ml-15 py-2.5 px-6 text-white bg-blue hover:bg-purple transition duration-300 rounded-full shadow-lg">
                     <span class="inline-block h-4 w-4 mr-2 rounded-full bg-purple "></span>
                     <span class="inline-block align-top">Quote</span>
                 </a>
@@ -26,29 +26,77 @@
         </nav>
     </header>
     
-    <section id="hero" class="text-white p-12">
-        <div class="">
+    <section id="hero" class="text-white p-12 mb-40">
+        <div class="container mx-auto flex flex-row items-center justify-center lg:gap-96">
             <!-- Text Container -->
-            <div class="">
-                <h1 class="">Developing Advanced Software</h1>
-                <p class="">Expert developers creating digital success Layer by Layer</p>
-                <div class="">
-                    <button class="">GET QUOTE</button>
-                    <button class="">PORTFOLIO</button>
+            <div class="flex-1">
+                <h1 class="title-primary">Developing Advanced Software</h1>
+                <p class="paragraph-primary">Expert developers creating digital success<br>Layer by Layer</p>
+                <div class="flex gap-4 mt-12">
+                    <button class="purple-button">GET QUOTE</button>
+                    <button class="black-button">PORTFOLIO</button>
                 </div>
             </div>
             <!-- Hero Image -->
-            <div class="">
-                <img src="./assets/hero-image.svg" alt="animated-computer-image" class="">
+            <div class="flex-1">
+                <img src="./assets/hero-image.svg" alt="animated-computer-image" class="hero-image">
             </div>
         </div>
     </section>
     
     <!-- Services Section -->
-    <section id="services">
-        <!-- Service 1 -->
-        <!-- Service 2 -->
-        <!-- Service 3 -->
+    <section id="services"class="text-white p-12 mb-40">
+
+        <div class="services-container">
+            <!-- Hero Image -->
+            <div class="flex-1">
+                <img src="./assets/hero-image.svg" alt="animated-computer-image" class="hero-image">
+            </div>
+              <!-- Text Container -->
+              <div class="flex-1">
+                <h2 class="sub-title">Full-Stack Solutions</h2>
+                <h1 class="title-secondary">Custom Software Development</h1>
+                <p class="paragraph-secondary">Customized software that fits like a glove,<br> designed to meet your unique business challenges.</p>
+                <div class="flex gap-4 mt-8">
+                    <button class="black-button">PORTFOLIO</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="services-container">
+            <!-- Text Container -->
+            <div class="flex-1">
+                <h2 class="sub-title">Innovative Engineering</h2>
+                <h1 class="title-secondary">Future-Ready Platforms</h1>
+                <p class="paragraph-secondary">Build systems that not only meet today's needs but are ready for tomorrow's growth.</p>
+                <div class="flex gap-4 mt-12">
+                    <button class="purple-button">GET QUOTE</button>
+                </div>
+            </div>
+            <!-- Hero Image -->
+            <div class="flex-1">
+                <img src="./assets/hero-image.svg" alt="animated-computer-image" class="hero-image">
+            </div>
+        </div>
+
+        <div class="services-container">
+            <!-- Hero Image -->
+            <div class="flex-1">
+                <img src="./assets/hero-image.svg" alt="animated-computer-image" class="hero-image">
+            </div>
+              <!-- Text Container -->
+              <div class="flex-1">
+                <h2 class="sub-title">Seamless Digital Experiences</h2>
+                <h1 class="title-secondary">Web & Mobile App Development</h1>
+                <p class="paragraph-secondary">We blend aesthetics with functionality to develop mobile apps that engage, inspire, and deliver.</p>
+                <div class="flex gap-4 mt-12">
+                    <button class="purple-button">GET QUOTE</button>
+                </div>
+            </div>
+        </div>
+
+
     </section>
     
     <!-- Testimonials Section -->
