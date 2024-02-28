@@ -760,6 +760,22 @@ video {
   width: 0.75rem;
 }
 
+.w-\[9\] {
+  width: 9;
+}
+
+.w-\[92\] {
+  width: 92;
+}
+
+.w-\[92\%\] {
+  width: 92%;
+}
+
+.w-\[\] {
+  width: ;
+}
+
 .max-w-6xl {
   max-width: 72rem;
 }
