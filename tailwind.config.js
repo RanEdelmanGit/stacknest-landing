@@ -8,6 +8,15 @@ module.exports = {
         'teal':'#ABD9D9',
         'purple': '#9091DC',
       },
+      width: {
+        '256': '64rem',
+      },
+      height:{
+        '256': '64rem',
+      },
+      backgroundImage: {
+        'radial-gradient': 'radial-gradient(circle at center, rgba(141,141,218,1) 0%, rgba(0,0,0,1) 61%)',
+      },
     },
   },
   plugins: [],

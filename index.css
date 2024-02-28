@@ -52,6 +52,21 @@
   
 }
 
+@layer components {
+  .gradient {
+    @apply w-256 h-256; 
+    background: rgb(141,141,218);
+    background: radial-gradient(circle at center, rgba(141,141,218,1) 0%, rgba(0,0,0,1) 61%);
+  }
+}
+
+/* .gradient{
+  @apply bg-[rgb(141,141,218)];
+  @apply bg-[radial-gradient(circle, rgba(141,141,218,1) 0%, rgba(0,0,0,1) 61%)];
+} */
+
+
+
 
 /* .container_nav_footer {
   width: 100%;
