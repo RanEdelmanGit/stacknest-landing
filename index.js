@@ -1,8 +1,9 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.querySelector('.hamburger');
-    const navDropdown = document.querySelector('.nav-dropdown');
-
-    hamburger.addEventListener('click', () => {
-        navDropdown.classList.toggle('hidden');
-    });
-});
+function toggleMenu() {
+    var x = document.querySelector(".topnav > div");
+    if (x.style.display === "flex") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "flex";
+    }
+  }
+  

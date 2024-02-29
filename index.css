@@ -3,43 +3,43 @@
 @tailwind utilities;
 
 
-.title-primary{
+.title-primary {
   @apply mt-4 mb-2 text-white lg:text-7xl font-bold;
 }
 
-.title-secondary{
+.title-secondary {
   @apply mt-4 text-white lg:text-5xl font-bold mb-8;
 }
 
-.sub-title{
+.sub-title {
   @apply font-bold text-teal text-xl;
 }
 
-.paragraph-primary{
+.paragraph-primary {
   @apply lg:text-2xl my-6;
 }
 
-.paragraph-secondary{
+.paragraph-secondary {
   @apply lg:text-xl my-6;
 }
 
-.purple-button{
+.purple-button {
   @apply bg-purple text-white uppercase h-14 w-48 font-bold py-2 px-6 rounded-full hover:bg-blue transition duration-300;
 }
 
-.transparent-button{
+.transparent-button {
   @apply bg-transparent h-14 w-48 border-2 uppercase hover:border-purple font-bold py-2 px-6 rounded-full hover:bg-purple hover:text-white transition duration-300;
 }
 
-.black-button{
+.black-button {
   @apply bg-black h-16 w-64 font-bold py-2 px-6 rounded-full uppercase text-white hover:bg-blue hover:text-white transition duration-300;
 }
 
-.hero-image{
-  @apply max-w-xs md:max-w-sm lg:max-w-lg xl:max-w-xl;
+.hero-image {
+  @apply max-w-xs md:max-w-sm lg:max-w-sm xl:max-w-sm;
 }
 
-.services-container{
+.services-container {
   @apply container mx-auto mb-36 flex flex-row items-center justify-center lg:gap-96;
 }
 
@@ -48,17 +48,37 @@
 }
 
 .square {
-  @apply aspect-square ;
-  
+  @apply aspect-square;
+
 }
 
 @layer components {
   .gradient {
-    @apply w-256 h-256; 
-    background: rgb(141,141,218);
-    background: radial-gradient(circle at center, rgba(141,141,218,1) 0%, rgba(0,0,0,1) 61%);
+    @apply w-256 h-256;
+    background: rgb(141, 141, 218);
+    background: radial-gradient(circle at center, rgba(141, 141, 218, 1) 0%, rgba(0, 0, 0, 1) 61%);
   }
 }
+
+.ham-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .topnav>div {
+    display: none;
+  }
+  .topnav > a > img{
+    width: 10rem;
+  }
+  .ham-menu {
+    display: initial;
+  }
+  .menu-items{
+    flex-direction: column;
+  }
+}
+
 
 /* .gradient{
   @apply bg-[rgb(141,141,218)];
@@ -114,6 +134,3 @@
       width: 100%;
   }
 } */
-
-
-
