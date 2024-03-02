@@ -64,9 +64,9 @@
  @apply md:none max-md:inline 
 } */
 
-.menu-items{
+/* .menu-items{
   @apply max-md:flex-column;
-}
+} */
 
 
 
