@@ -17,6 +17,13 @@ module.exports = {
       backgroundImage: {
         'radial-gradient': 'radial-gradient(circle at center, rgba(141,141,218,1) 0%, rgba(0,0,0,1) 61%)',
       },
+      screens: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1000px', 
+        'xl': '1280px',
+       
+      },
     },
   },
   plugins: [],

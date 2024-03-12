@@ -4,11 +4,11 @@
 
 
 .title-primary {
-  @apply md:mt-4 md:mb-2 text-white lg:text-7xl max-md:text-4xl font-bold;
+  @apply text-white md:text-7xl max-md:text-4xl font-bold;
 }
 
 .title-secondary {
-  @apply mt-4 text-white lg:text-5xl font-bold mb-8;
+  @apply mt-4 text-white md:text-5xl max-md:text-3xl font-bold md:mb-8 max-md:mb-6;
 }
 
 .sub-title {
@@ -16,11 +16,11 @@
 }
 
 .paragraph-primary {
-  @apply lg:text-2xl max-md:text-xl md:my-6 max-md:mb-6 max-md:mt-0;
+  @apply md:text-2xl max-md:text-xl;
 }
 
 .paragraph-secondary {
-  @apply lg:text-xl my-6 max-md:mb-6 max-md:mt-0;
+  @apply md:text-xl my-6 max-md:mb-6 max-md:mt-0 max-md:text-lg;
 }
 
 .purple-button {
@@ -28,7 +28,7 @@
 }
 
 .transparent-button {
-  @apply bg-transparent h-14 w-48 border-2 uppercase hover:border-purple font-bold py-2 px-6 rounded-full hover:bg-purple hover:text-white transition duration-300;
+  @apply bg-transparent h-14 w-48 border-2 uppercase hover:border-blue hover:ring-2 hover:ring-blue  font-bold py-2 px-6 rounded-full hover:text-white transition duration-300;
 }
 
 .black-button {
@@ -36,11 +36,11 @@
 }
 
 .hero-image {
-  @apply max-w-lg max-md:w-36 max-md:mr-0 max-md:ml-auto;
+  @apply ml-auto max-w-lg max-md:size-40;
 }
 
 .services-container {
-  @apply container mx-auto mb-36 flex flex-row items-center justify-center lg:gap-96;
+  @apply container mx-auto mb-36 max-md:mb-20 flex flex-row items-center justify-center lg:gap-96;
 }
 
 .nav-link {

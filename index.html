@@ -18,7 +18,7 @@
         <!-- <div class="absolute -z-10 gradient bottom-0 right-0" ></div> -->
         <div class="z-20">
             <header class="body-font shadow-sm mx-auto w-[92%]">
-                <nav class="container mx-auto flex py-5 items-center justify-between">
+                <nav class="container mx-auto flex max-md:pt-5 lg:py-5 items-center justify-between">
                     <a href="/" class="flex items-center text-white py-2">
                         <img src="./assets/stacknest_logo.svg" alt="Stack Nest" class="md:w-64 max-md:w-44">
                     </a>
@@ -39,32 +39,39 @@
             </header>
         </div>
 
-        <section id="hero" class="text-white mb-40 max-md:mb-20 pt-12 px-6">
-            <div class="container mx-auto grid grid-cols-6 grid-rows-3 gap-0 items-center justify-center">
+        <section id="hero" class="text-white mb-32 max-md:mb-20 max-md:mt-10 max-md:px-6">
+            <div class="container mx-auto md:w-[75%] grid grid-cols-6 grid-auto-rows auto gap-0 items-center">
                 <!-- Text Container -->
                 <div class="col-start-1 col-span-2 row-start-1 row-span-2 md:p-4 max-md:row-span-1">
-                    <h1 class="title-primary">Developing Advanced Software</h1>
+                    <h1 class="title-primary my-6">Developing Advanced Software</h1>
+                    <!-- Increase bottom margin on md screens -->
                 </div>
                 <!-- Hero Image -->
-                <div class="col-start-4 col-span-3 row-start-1 row-span-3 md:pl-64 max-md:row-span-1">
-                    <img src="./assets/section-images/hero-image.svg" alt="animated-computer-image" class="hero-image w-full">
+                <div class="col-start-4 col-span-3 row-start-1 row-span-3 max-md:row-span-1">
+                    <img src="./assets/section-images/hero-image.svg" alt="animated-computer-image"
+                        class="hero-image w-full">
                 </div>
                 <!-- Subheading and Buttons -->
                 <div class="col-start-1 col-span-3 row-start-2 row-span-2 md:p-4 max-md:row-span-1 max-md:col-span-6">
-                    <h2 class="paragraph-primary">Expert developers creating digital success<br>Layer by Layer</h2>
+                    <h2 class="paragraph-primary max-md:mb-10 max-md:mt-0 md:my-8">Expert developers creating digital
+                        success<br><span class="font-semibold">Layer by Layer</span></h2> <!-- Adjusted top margin -->
                 </div>
-                <div class="col-start-1 col-span-3 row-start-3 row-span-1 flex flex-col max-md:flex-row lg:flex-row gap-4 md:mt-12 md:p-4 max-md:col-span-6  max-md:mb-auto">
+                <div
+                    class="col-start-1 col-span-3 row-start-3 row-span-1 flex flex-col max-md:flex-row lg:flex-row gap-4 md:mt-12 md:p-4 max-md:col-span-6">
                     <button class="purple-button">GET QUOTE</button>
                     <button class="transparent-button">PORTFOLIO</button>
                 </div>
             </div>
         </section>
 
+
+
         <section id="technology">
-            <div class="container flex pl-1">
+            <div class="container flex">
                 <!-- <h3 class="text-white uppercase sub-title tracking-widest mb-4">tech</h3> -->
             </div>
-            <div class="container w-[92%] mx-auto bg-purple bg-opacity-50 rounded-md mb-40 max-md:mb-24 h-20 flex items-center">
+            <div
+                class="container w-[92%] mx-auto bg-purple bg-opacity-50 rounded-md mb-40 max-md:mb-10 h-20 flex items-center">
                 <!-- This flex container will center all its children vertically -->
                 <div class="flex justify-around w-full">
                     <!-- The items-center class here will center the images vertically within these divs -->
@@ -89,10 +96,10 @@
 
 
         <!-- Services Section -->
-        <section id="services" class="text-white p-12 mb-40">
+        <section id="services" class="text-white p-12 mb-40 max-md:mb-20 max-md:space-y-32 md:w-[75%] mx-auto">
 
             <div class="services-container">
-                <div class="flex-1">
+                <div class="max-md:hidden flex-1">
                     <img src="./assets/section-images/services-1.svg" alt="animated-image" class="hero-image">
                 </div>
                 <div class="flex-1">
@@ -109,7 +116,7 @@
 
 
             <div class="services-container">
-                <div class="flex-1">
+                <div class="flex-1 md:pl-20">
                     <h2 class="sub-title">Innovative Engineering</h2>
                     <h3 class="title-secondary">Future-Ready Platforms</h3>
                     <p class="paragraph-secondary">Build systems that not only meet today's needs but are ready for
@@ -119,13 +126,13 @@
                     </div>
                 </div>
 
-                <div class="flex-1">
+                <div class="flex-1 max-md:hidden">
                     <img src="./assets/section-images/services-2.svg" alt="animated-graph-image" class="hero-image">
                 </div>
             </div>
 
             <div class="container mx-auto flex flex-row items-center justify-center lg:gap-96">
-                <div class="flex-1">
+                <div class="flex-1 max-md:hidden">
                     <img src="./assets/section-images/services-3.svg" alt="animated-phone-image" class="hero-image">
                 </div>
                 <div class="flex-1">
@@ -135,7 +142,7 @@
                         that
                         engage, inspire, and deliver.</p>
                     <div class="flex gap-4 mt-12">
-                        <button class="purple-button">CONTACT US</button>
+                        <button class="transparent-button">CONTACT US</button>
                     </div>
                 </div>
             </div>
@@ -144,10 +151,10 @@
         </section>
 
         <!-- Testimonials Section -->
-        <section id="testimonials" class="text-center md:mb-40 ">
+        <section id="testimonials" class="text-center mb-40 max-md:mb-20">
             <h2 class="sub-title">Testimonials</h2>
-            <h2 class=" mt-4 text-white lg:text-5xl font-bold mb-16 max-md:mb-0">Read What Others<br>Have To Say</h2>
-            <div class="max-w-6xl mx-auto max-md:pt-14 max-md:px-14 grid grid-cols-1 md:grid-cols-3 gap-4 max-md:mb-20">
+            <h2 class=" mt-4 text-white md:text-5xl max-md:text-2xl font-bold mb-16 max-md:mb-0">Read What Others<br>Have To Say</h2>
+            <div class="max-w-6xl mx-auto max-md:pt-10 max-md:px-14 grid grid-cols-1 md:grid-cols-3 gap-4 max-md:mb-20">
 
                 <!-- Testimonial 1 -->
                 <div
@@ -193,28 +200,26 @@
         </section>
 
         <!-- Final Statement Call-to-Action -->
-        <section id="final-statement"
-            class="relative rounded-3xl bg-gradient-to-r from-blue to-purple mx-auto max-w-6xl py-28 mb-40 max-md:mx-14 max-md:mb-20">
-            <div class="text-center mb-8  relative bottom-8">
-                <h2 class="font-bold uppercase text-black text-xl tracking-widest mb-4">Are you ready?</h2>
-                <h3 class="text-white lg:text-5xl max-md:text-3xl font-bold md:mb-8">Create Your Digital Success With Us,<br>Layer by
-                    Layer
-                </h3>
+        <section id="final-statement" class="relative rounded-3xl bg-gradient-to-r from-blue to-purple mx-auto max-w-6xl py-16 mb-40 max-md:mx-12 max-md:mb-20">
+            <div class="text-center space-y-10 px-8"> 
+                <h2 class="font-bold uppercase text-black text-xl tracking-widest">Are you ready?</h2>
+                <h3 class="text-white lg:text-5xl max-md:text-3xl font-bold">Create Your Digital Success With Us,<br> Layer by Layer</h3>
+                <button class="black-button mx-auto py-4 px-8">Get Started</button> <!-- mx-auto centers the button, py-4 and px-8 are for padding -->
             </div>
-            <button class="absolute inset-x-0 bottom-8 mx-auto black-button">Get Started</button>
         </section>
 
 
+
         <!-- Footer -->
-        <footer class="text-white py-5 mb-20 w-[92%] mx-auto">
+        <footer class="text-white py-5 mb-40 max-md:mb-10 w-[92%] mx-auto">
             <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
                 <!-- Logo and Title -->
-                <div class="mb-6 md:mb-0">
-                    <img src="./assets/stacknest_logo.svg" alt="Stack Nest" class="w-54">
+                <div class="mb-10 md:mb-0 max-md:self-start">
+                    <img src="./assets/stacknest_logo.svg" alt="Stack Nest" class="w-54 max-md:w-44">
                 </div>
 
                 <!-- Link Sections -->
-                <div class="flex flex-grow justify-around space-x-4 md:space-x-8">
+                <div class="flex flex-grow justify-around md:space-x-8 max-md:space-x-12 max-md:mb-10">
                     <!-- Page Links -->
                     <div>
                         <h3 class="sub-title mb-2">Page</h3>
@@ -248,11 +253,12 @@
                 </div>
 
                 <!-- Newsletter Section -->
+                <h2 class="sub-title md:hidden p-6">Join our Newsletter</h2>
                 <div class="relative bg-blue rounded-full overflow-hidden">
                     <input type="email" placeholder="Email Address"
-                        class="pl-6 pr-20 py-3 w-full bg-blue text-white focus:outline-none" required>
+                        class="pl-6 pr-20 py-3 w-full bg-blue text-white" required>
                     <button type="submit"
-                        class="absolute right-0 mr-1 top-1 text-white px-6 py-2 rounded-full bg-purple focus:outline-none z-10">SUBMIT</button>
+                        class="absolute right-0 mr-1 top-1 text-white px-6 py-2 rounded-full bg-purple hover:ring-2 hover:ring-purple z-10">SUBMIT</button>
                 </div>
 
             </div>
