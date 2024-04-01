@@ -585,6 +585,26 @@ video {
   background: radial-gradient(circle at center, rgba(141, 141, 218, 1) 0%, rgba(0, 0, 0, 1) 61%);
 }
 
+.menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 2rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px) {
+  .menu {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
 .absolute {
   position: absolute;
 }
@@ -611,6 +631,10 @@ video {
 
 .top-1 {
   top: 0.25rem;
+}
+
+.-right-0 {
+  right: -0px;
 }
 
 .-z-10 {
@@ -763,6 +787,10 @@ video {
   width: 1rem;
 }
 
+.w-44 {
+  width: 11rem;
+}
+
 .w-\[92\%\] {
   width: 92%;
 }
@@ -797,10 +825,6 @@ video {
 
 .flex-col {
   flex-direction: column;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
 }
 
 .items-center {
@@ -1008,11 +1032,6 @@ video {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-purple {
-  --tw-text-opacity: 1;
-  color: rgb(144 145 220 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1312,6 +1331,23 @@ video {
   aspect-ratio: 1 / 1;
 }
 
+.ham-menu {
+  --tw-text-opacity: 1;
+  color: rgb(144 145 220 / var(--tw-text-opacity));
+}
+
+@media not all and (min-width: 768px) {
+  .ham-menu {
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .ham-menu {
+    display: none;
+  }
+}
+
 /* .ham-menu {
  @apply md:none max-md:inline 
 } */
@@ -1466,16 +1502,8 @@ video {
     padding-right: 1.5rem;
   }
 
-  .max-md\:pr-6 {
-    padding-right: 1.5rem;
-  }
-
   .max-md\:pt-10 {
     padding-top: 2.5rem;
-  }
-
-  .max-md\:pt-5 {
-    padding-top: 1.25rem;
   }
 
   .max-md\:text-2xl {
@@ -1519,6 +1547,10 @@ video {
     width: 75%;
   }
 
+  .md\:w-auto {
+    width: auto;
+  }
+
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -1535,11 +1567,6 @@ video {
 
   .md\:p-4 {
     padding: 1rem;
-  }
-
-  .md\:py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
   }
 
   .md\:pl-20 {

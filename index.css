@@ -60,6 +60,18 @@
   }
 }
 
+
+@layer components {
+  .menu {
+    @apply flex flex-col justify-center gap-10 relative p-8 text-white text-lg md:flex-row md:items-center;
+  }
+}
+  
+
+.ham-menu{
+  @apply md:hidden max-md:pr-6 text-purple;
+}
+
 /* .ham-menu {
  @apply md:none max-md:inline 
 } */
