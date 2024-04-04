@@ -44,7 +44,7 @@
 }
 
 .nav-link {
-  @apply mr-5 px-5 hover:text-gray-300;
+  @apply md:mr-5 px-5 hover:text-gray-300 max-md:flex max-md:justify-center;
 }
 
 .square {
