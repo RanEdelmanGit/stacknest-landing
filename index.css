@@ -36,11 +36,12 @@
 }
 
 .hero-image {
-  @apply ml-auto max-w-lg max-md:size-40;
+  @apply ml-auto max-w-md max-md:size-40;
 }
 
+
 .services-container {
-  @apply container mx-auto mb-36 max-md:mb-20 flex flex-row items-center justify-center lg:gap-96;
+  @apply container mx-auto mb-36 max-md:mb-20 flex items-center justify-center lg:gap-96;
 }
 
 .nav-link {
