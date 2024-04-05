@@ -29,43 +29,47 @@
                     </div>
                     <!-- The menu is flex by default, hidden on small screens, and flex on medium screens and larger -->
                     <div class="menu hidden md:flex">
+                        <a href="portfolio.html" class="nav-link">Portfolio</a>
                         <a href="#about" class="nav-link">About</a>
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
                         <a href="#contact" class="nav-link">Contact</a>
-                        <a href="#quote" class="md:ml-4 py-2.5 px-6 text-white bg-blue hover:bg-purple transition duration-300 rounded-full shadow-lg">
+                        <a href="#quote"
+                            class="md:ml-4 py-2.5 px-6 text-white bg-blue hover:bg-purple transition duration-300 rounded-full shadow-lg">
                             <span class="inline-block h-4 w-4 mr-2 rounded-full bg-purple"></span>
                             <span class="inline-block align-top">Quote</span>
                         </a>
                     </div>
                 </nav>
             </header>
-            
-        </div>
 
-        <section id="hero" class="text-white mb-32 max-md:mb-20 max-md:mt-10 max-md:px-6">
-            <div class="container mx-auto md:w-[75%] grid grid-cols-6 grid-auto-rows auto gap-0 items-center">
-                <!-- Text Container -->
-                <div class="col-start-1 col-span-2 row-start-1 row-span-2 md:p-4 max-md:row-span-1">
-                    <h1 class="title-primary my-6">Developing Advanced Software</h1>
-                    <!-- Increase bottom margin on md screens -->
+        </div>
+        <main>
+            <section id="hero" class="text-white mb-32 max-md:mb-20 max-md:mt-10 max-md:px-6">
+                <div class="container mx-auto md:w-[75%] grid grid-cols-6 grid-auto-rows auto gap-0 items-center">
+                    <!-- Text Container -->
+                    <div class="col-start-1 col-span-2 row-start-1 row-span-2 md:p-4 max-md:row-span-1">
+                        <h1 class="title-primary my-6">Developing Advanced Software</h1>
+                        <!-- Increase bottom margin on md screens -->
+                    </div>
+                    <!-- Hero Image -->
+                    <div class="col-start-4 col-span-3 row-start-1 row-span-3 max-md:row-span-1">
+                        <img src="./assets/section-images/hero-image.svg" alt="animated-computer-image"
+                            class="hero-image w-full">
+                    </div>
+                    <!-- Subheading and Buttons -->
+                    <div
+                        class="col-start-1 col-span-3 row-start-2 row-span-2 md:p-4 max-md:row-span-1 max-md:col-span-6">
+                        <h2 class="paragraph-primary max-md:mb-14 max-md:mt-0 md:my-8">Expert developers creating
+                            digital
+                            success<br><span class="font-semibold">Layer by Layer</span></h2>
+                    </div>
+                    <div
+                        class="col-start-1 col-span-3 row-start-3 row-span-1 flex flex-col max-md:flex-row lg:flex-row gap-4 md:mt-12 md:p-4 max-md:col-span-6">
+                        <button class="purple-button">GET QUOTE</button>
+                        <button class="transparent-button">PORTFOLIO</button>
+                    </div>
                 </div>
-                <!-- Hero Image -->
-                <div class="col-start-4 col-span-3 row-start-1 row-span-3 max-md:row-span-1">
-                    <img src="./assets/section-images/hero-image.svg" alt="animated-computer-image"
-                        class="hero-image w-full">
-                </div>
-                <!-- Subheading and Buttons -->
-                <div class="col-start-1 col-span-3 row-start-2 row-span-2 md:p-4 max-md:row-span-1 max-md:col-span-6">
-                    <h2 class="paragraph-primary max-md:mb-14 max-md:mt-0 md:my-8">Expert developers creating digital
-                        success<br><span class="font-semibold">Layer by Layer</span></h2> 
-                </div>
-                <div
-                    class="col-start-1 col-span-3 row-start-3 row-span-1 flex flex-col max-md:flex-row lg:flex-row gap-4 md:mt-12 md:p-4 max-md:col-span-6">
-                    <button class="purple-button">GET QUOTE</button>
-                    <button class="transparent-button">PORTFOLIO</button>
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
 
 
 
@@ -153,78 +157,78 @@
 
         </section>
 
- <!-- Testimonials Section -->
- <section id="testimonials" class="text-center mb-40 max-md:mb-20">
-    <h2 class="sub-title">Testimonials</h2>
-    <h2 class=" mt-4 text-white md:text-5xl max-md:text-2xl font-bold mb-16 max-md:mb-0">Read What
-        Others<br>Have To Say</h2>
-    <div class="max-w-6xl mx-auto max-md:pt-10 max-md:px-4 grid grid-cols-2 md:grid-cols-3 gap-4 max-md:mb-20">
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="text-center mb-40 max-md:mb-20">
+            <h2 class="sub-title">Testimonials</h2>
+            <h2 class=" mt-4 text-white md:text-5xl max-md:text-2xl font-bold mb-16 max-md:mb-0">Read What
+                Others<br>Have To Say</h2>
+            <div class="max-w-6xl mx-auto max-md:pt-10 max-md:px-4 grid grid-cols-2 md:grid-cols-3 gap-4 max-md:mb-20">
 
-        <!-- Testimonial 1 -->
-        <div
-            class="bg-gray-500 bg-opacity-25 p-6 rounded-2xl shadow-md square flex flex-col items-center md:hidden justify-center space-y-4 max-md:p-2 max-md:space-y-2" >
-            <img class="w-24 h-24 rounded-full mb-4 opacity-50 max-md:w-12 max-md:h-12 max-md:mb-2"
-                src="./assets/testemonials/Ellipse 3.jpg" alt="Olivia Cole">
-            <h3 class="text-white text-lg font-semibold max-md:text-sm">Olivia Cole</h3>
-            <p class="text-white text-center max-md:text-xs">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper sollicitudin mi,
-                in
-                malesuada felis malesuada vel.
-            </p>
-        </div>
-        <!-- Testimonial 2 -->
-        <div
-            class="bg-gray-500 bg-opacity-25 p-6 rounded-2xl shadow-md square flex flex-col items-center justify-center space-y-4 max-md:p-2 max-md:space-y-2">
-            <img class="w-24 h-24 rounded-full mb-4 opacity-50 max-md:w-12 max-md:h-12 max-md:mb-2"
-                src="./assets/testemonials/Ellipse 3.jpg" alt="Ava Thompson">
-            <h3 class="text-white text-lg font-semibold max-md:text-sm">Ava Thompson</h3>
-            <p class="text-white text-center max-md:text-xs">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper sollicitudin mi,
-                in
-                malesuada felis malesuada vel.
-            </p>
-        </div>
+                <!-- Testimonial 1 -->
+                <div
+                    class="bg-gray-500 bg-opacity-25 p-6 rounded-2xl shadow-md square flex flex-col items-center md:hidden justify-center space-y-4 max-md:p-2 max-md:space-y-2">
+                    <img class="w-24 h-24 rounded-full mb-4 opacity-50 max-md:w-12 max-md:h-12 max-md:mb-2"
+                        src="./assets/testemonials/Ellipse 3.jpg" alt="Olivia Cole">
+                    <h3 class="text-white text-lg font-semibold max-md:text-sm">Olivia Cole</h3>
+                    <p class="text-white text-center max-md:text-xs">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper sollicitudin mi,
+                        in
+                        malesuada felis malesuada vel.
+                    </p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div
+                    class="bg-gray-500 bg-opacity-25 p-6 rounded-2xl shadow-md square flex flex-col items-center justify-center space-y-4 max-md:p-2 max-md:space-y-2">
+                    <img class="w-24 h-24 rounded-full mb-4 opacity-50 max-md:w-12 max-md:h-12 max-md:mb-2"
+                        src="./assets/testemonials/Ellipse 3.jpg" alt="Ava Thompson">
+                    <h3 class="text-white text-lg font-semibold max-md:text-sm">Ava Thompson</h3>
+                    <p class="text-white text-center max-md:text-xs">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper sollicitudin mi,
+                        in
+                        malesuada felis malesuada vel.
+                    </p>
+                </div>
 
-    <!-- Testimonial 3 -->
-        
-        <div
-        class="bg-gray-500 bg-opacity-25 p-6 rounded-2xl shadow-md square flex flex-col items-center justify-center space-y-4 max-md:p-2 max-md:space-y-2">
-        <img class="w-24 h-24 rounded-full mb-4 opacity-50 max-md:w-12 max-md:h-12 max-md:mb-2" src="./assets/testemonials/Ellipse 4.jpg"
-            alt="Lucas Gray">
-        <h3 class="text-white text-lg font-semibold max-md:text-sm">Lucas Gray</h3>
-        <p class="text-white text-center max-md:text-xs">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper sollicitudin mi,
-            in
-            malesuada felis malesuada vel.
-        </p>
-    </div>
-        <!-- Testimonial 4 -->
-        <div
-        class="bg-gray-500 bg-opacity-25 p-6 rounded-2xl shadow-md square flex flex-col items-center justify-center space-y-4 max-md:p-2 max-md:space-y-2">
-        <img class="w-24 h-24 rounded-full mb-4 opacity-50 max-md:w-12 max-md:h-12 max-md:mb-2" src="./assets/testemonials/Ellipse 5.jpg"
-            alt="Ethan Carter">
-        <h3 class="text-white text-lg font-semibold max-md:text-sm">Ethan Carter</h3>
-        <p class="text-white text-center max-md:text-xs">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper sollicitudin mi,
-            in
-            malesuada felis malesuada vel.
-        </p>
-    </div>
+                <!-- Testimonial 3 -->
 
-    </div>
-</section>
+                <div
+                    class="bg-gray-500 bg-opacity-25 p-6 rounded-2xl shadow-md square flex flex-col items-center justify-center space-y-4 max-md:p-2 max-md:space-y-2">
+                    <img class="w-24 h-24 rounded-full mb-4 opacity-50 max-md:w-12 max-md:h-12 max-md:mb-2"
+                        src="./assets/testemonials/Ellipse 4.jpg" alt="Lucas Gray">
+                    <h3 class="text-white text-lg font-semibold max-md:text-sm">Lucas Gray</h3>
+                    <p class="text-white text-center max-md:text-xs">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper sollicitudin mi,
+                        in
+                        malesuada felis malesuada vel.
+                    </p>
+                </div>
+                <!-- Testimonial 4 -->
+                <div
+                    class="bg-gray-500 bg-opacity-25 p-6 rounded-2xl shadow-md square flex flex-col items-center justify-center space-y-4 max-md:p-2 max-md:space-y-2">
+                    <img class="w-24 h-24 rounded-full mb-4 opacity-50 max-md:w-12 max-md:h-12 max-md:mb-2"
+                        src="./assets/testemonials/Ellipse 5.jpg" alt="Ethan Carter">
+                    <h3 class="text-white text-lg font-semibold max-md:text-sm">Ethan Carter</h3>
+                    <p class="text-white text-center max-md:text-xs">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper sollicitudin mi,
+                        in
+                        malesuada felis malesuada vel.
+                    </p>
+                </div>
 
-<!-- Final Statement Call-to-Action -->
-<section id="final-statement"
-    class="relative rounded-3xl bg-gradient-to-r from-blue to-purple mx-auto max-w-6xl py-10 mb-40 max-md:mx-12 max-md:mb-20">
-    <div class="text-center space-y-10 px-8">
-        <h2 class="font-bold uppercase text-black text-xl tracking-widest">Are you ready?</h2>
-        <h3 class="text-white lg:text-5xl max-md:text-3xl font-bold">Create Your Digital Success With Us,<br>
-            Layer by Layer</h3>
-        <button class="black-button mx-auto py-4 px-8">Get Started</button>
-        <!-- mx-auto centers the button, py-4 and px-8 are for padding -->
-    </div>
-</section>
+            </div>
+        </section>
+
+        <!-- Final Statement Call-to-Action -->
+        <section id="final-statement"
+            class="relative rounded-3xl bg-gradient-to-r from-blue to-purple mx-auto max-w-6xl py-10 mb-40 max-md:mx-12 max-md:mb-20">
+            <div class="text-center space-y-10 px-8">
+                <h2 class="font-bold uppercase text-black text-xl tracking-widest">Are you ready?</h2>
+                <h3 class="text-white lg:text-5xl max-md:text-3xl font-bold">Create Your Digital Success With Us,<br>
+                    Layer by Layer</h3>
+                <button class="black-button mx-auto py-4 px-8">Get Started</button>
+                <!-- mx-auto centers the button, py-4 and px-8 are for padding -->
+            </div>
+        </section>
 
 
 

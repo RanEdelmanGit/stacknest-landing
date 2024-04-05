@@ -1246,7 +1246,7 @@ video {
 
 .hero-image {
   margin-left: auto;
-  max-width: 28rem;
+  max-width: 32rem;
 }
 
 @media not all and (min-width: 768px) {
@@ -1355,66 +1355,22 @@ video {
   }
 }
 
-/* .ham-menu {
- @apply md:none max-md:inline 
-} */
-
-/* .menu-items{
-  @apply max-md:flex-column;
-} */
-
-/* .gradient{
-  @apply bg-[rgb(141,141,218)];
-  @apply bg-[radial-gradient(circle, rgba(141,141,218,1) 0%, rgba(0,0,0,1) 61%)];
-} */
-
-/* 
-.container_nav_footer {
-  width: 100%;
-  padding: 0;
+.item {
+  margin: 2.5rem;
+  aspect-ratio: 1 / 1;
+  width: 24rem;
+  border-radius: 0.5rem;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
+  background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
+  --tw-gradient-from: #6b7280 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(107 114 128 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #374151 var(--tw-gradient-to-position);
+  padding: 0.5rem;
+  opacity: 0.25;
 }
-@media (min-width: 640px) {
-  .container_nav_footer {
-      max-width: 640px;
-  }
-}
-@media (min-width: 768px) {
-  .container_nav_footer {
-      max-width: 768px;
-  }
-}
-@media (min-width: 1024px) {
-  .container_nav_footer {
-      max-width: 1024px;
-      margin:5vw;
-    
-      width: 100%;
-  }
-}
-@media (min-width: 1280px) {
-  .container_nav_footer {
-      max-width: 1280px;
-      margin:5vw;
-    
-      width: 100%;
-  }
-}
-@media (min-width: 1536px) {
-  .container_nav_footer {
-      max-width: 1536px;
-      margin:5vw;
-     
-      width: 100%;
-  }
-}
-
-@media (min-width: 1900px) {
-  .container_nav_footer {
-      max-width: 1750px;
-      margin:1vh 5vw;
-      width: 100%;
-  }
-} */
 
 .hover\:bg-purple:hover {
   --tw-bg-opacity: 1;
@@ -1459,6 +1415,10 @@ video {
     margin-bottom: 2.5rem;
   }
 
+  .max-md\:mb-14 {
+    margin-bottom: 3.5rem;
+  }
+
   .max-md\:mb-2 {
     margin-bottom: 0.5rem;
   }
@@ -1473,14 +1433,6 @@ video {
 
   .max-md\:mt-10 {
     margin-top: 2.5rem;
-  }
-
-  .max-md\:mt-5 {
-    margin-top: 1.25rem;
-  }
-
-  .max-md\:mb-14 {
-    margin-bottom: 3.5rem;
   }
 
   .max-md\:hidden {
@@ -1620,21 +1572,12 @@ video {
     padding: 1rem;
   }
 
-  .md\:py-5 {
-    padding-top: 1.25rem;
+  .md\:pb-5 {
     padding-bottom: 1.25rem;
   }
 
   .md\:pl-20 {
     padding-left: 5rem;
-  }
-
-  .md\:pt-5 {
-    padding-top: 1.25rem;
-  }
-
-  .md\:pb-5 {
-    padding-bottom: 1.25rem;
   }
 
   .md\:text-5xl {
