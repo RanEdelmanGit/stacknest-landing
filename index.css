@@ -35,6 +35,24 @@
   @apply bg-black h-16 w-64 font-bold py-2 px-6 rounded-full uppercase text-white hover:bg-blue hover:text-white transition duration-300;
 }
 
+.nav-button{
+  @apply md:ml-4 py-2.5 px-6 text-white bg-blue shadow-lg rounded-full
+
+}
+
+.circle-nav-button{
+  @apply inline-block h-4 w-4 mr-2 rounded-full bg-purple;
+}
+
+.nav-button:hover {
+  @apply bg-purple transition duration-300;
+}
+
+.nav-button:hover .circle-nav-button {
+  @apply bg-blue transition duration-300;
+}
+
+
 .hero-image {
   @apply ml-auto max-w-lg max-md:size-40;
 }
@@ -57,9 +75,25 @@
   .gradient {
     @apply w-256 h-256;
     background: rgb(141, 141, 218);
-    background: radial-gradient(circle at center, rgba(141, 141, 218, 1) 0%, rgba(0, 0, 0, 1) 61%);
+    background: radial-gradient(circle at center, rgba(141, 141, 218, 1) -25%, rgba(0, 0, 0, 1) 55%);
   }
 }
+
+.clip-half-right {
+  clip-path: inset(0 45%  0 0 );
+}
+.clip-half-left {
+  clip-path: inset(0 50% 0 0 );
+}
+
+.clip-half-bottom {
+  clip-path: inset(0 0 50% 0 );
+}
+
+.clip-half-top {
+  clip-path: inset(50% 0 0 0 );
+}
+
 
 
 @layer components {
@@ -78,7 +112,7 @@
 }
 
 .logos{
- @apply bg-purple rounded-lg mx-auto max-md:w-[92%];
+ @apply bg-purple bg-opacity-75 rounded-lg mx-auto max-md:w-[92%];
   .marquee{
     width: 100vw;
     max-width: 100%;

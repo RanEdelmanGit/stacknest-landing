@@ -12,8 +12,11 @@
 
 <body class="bg-black">
     <div class="relative">
-        <!-- <div class="absolute -z-10 -top-96 left-20">
-            <img src="./assets/bg-circle.png" class="" alt="">
+        <!-- <div class="absolute z-0 top-0 -right-1/3 opacity-75">
+            <img src="./assets/bg-circle.png" class="clip-half-right" alt="">
+        </div>
+        <div class="absolute z-0 -top-full left-0">
+            <img src="./assets/bg-circle.png" class="clip-half-top" alt="">
         </div> -->
         <!-- <div class="absolute -z-10 gradient bottom-0 right-0" ></div> -->
         <div class="z-20">
@@ -32,11 +35,10 @@
                         <a href="portfolio.html" class="nav-link">Portfolio</a>
                         <a href="#about" class="nav-link">About</a>
                         <a href="#contact" class="nav-link">Contact</a>
-                        <a href="#quote"
-                            class="md:ml-4 py-2.5 px-6 text-white bg-blue hover:bg-purple transition duration-300 rounded-full shadow-lg">
-                            <span class="inline-block h-4 w-4 mr-2 rounded-full bg-purple"></span>
+                        <button type="button" class="nav-button" onclick="location.href='#quote'">
+                            <span class="circle-nav-button"></span>
                             <span class="inline-block align-top">Quote</span>
-                        </a>
+                        </button>
                     </div>
                 </nav>
             </header>
