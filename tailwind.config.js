@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html"],
+  content: ["./index.html", "./portfolio.html"],
   theme: {
     extend: {
       colors:{
@@ -23,6 +23,15 @@ module.exports = {
         'lg': '1000px', 
         'xl': '1280px',
        
+      },
+      animation: {
+        marquee: 'marquee 40s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          'from': { transform: 'translateX(100%)' },
+          'to': { transform: 'translateX(-50%)' },
+        },
       },
     },
   },

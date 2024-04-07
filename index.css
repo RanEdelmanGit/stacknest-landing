@@ -76,3 +76,45 @@
 .item {
   @apply w-96 p-2 m-10 aspect-square border-2 border-gray-500 rounded-lg bg-gradient-to-bl from-gray-500 to-gray-700 opacity-25;
 }
+
+.logos{
+ @apply bg-purple rounded-lg mx-auto max-md:w-[92%];
+  .marquee{
+    width: 100vw;
+    max-width: 100%;
+    height: 80px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    opacity: 75%;
+    .track{
+   position: absolute;
+   white-space: nowrap;
+   will-change: transform;
+   animation: marquee 20s linear infinite;
+   display: flex;
+   gap: 180px;
+   width: 100%;
+    }
+  }
+  .tech-logo{
+    @apply h-14 max-md:h-12
+  }
+}
+
+@media (max-width: 768px) {
+  .logos .marquee .track{
+    gap: 25px;
+  }
+}
+
+@keyframes marquee {
+  0%{
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
